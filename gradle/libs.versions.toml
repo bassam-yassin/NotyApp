@@ -13,6 +13,7 @@ coroutines = "1.3.9"
 hilt = "2.44"
 lifecycle_version = "2.8.4"
 nav_version = "2.7.7"
+hilt_navigation = "1.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -39,6 +40,7 @@ coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-andro
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
 hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
+hilt-navigation = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hilt_navigation" }
 
 viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle_version" }
 viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycle_version" }
@@ -47,7 +49,7 @@ navigation-compose = { group = "androidx.navigation", name = "navigation-compose
 
 [bundles]
 room = [ "room", "roomCompiler", "roomKtx" ]
-hilt = [ "hilt-android", "hilt-compiler", "hilt-android-compiler" ]
+hilt = [ "hilt-android", "hilt-compiler", "hilt-android-compiler","hilt-navigation" ]
 viewmodel = [ "viewmodel", "viewmodel-compose"]
 
 [plugins]
