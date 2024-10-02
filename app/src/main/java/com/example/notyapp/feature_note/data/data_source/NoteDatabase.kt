@@ -2,7 +2,6 @@ package com.example.notyapp.feature_note.data.data_source
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.example.notyapp.feature_note.data.data_source.NoteDao
 import com.example.notyapp.feature_note.domain.model.Note
 
 @Database(entities = [Note::class], version = 1)

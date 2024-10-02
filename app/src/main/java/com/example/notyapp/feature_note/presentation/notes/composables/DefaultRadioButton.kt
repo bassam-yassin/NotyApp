@@ -1,4 +1,4 @@
-package com.example.notyapp.feature_note.presentation
+package com.example.notyapp.feature_note.presentation.notes.composables
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer

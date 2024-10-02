@@ -1,4 +1,4 @@
-package com.example.notyapp.feature_note.presentation.notes
+package com.example.notyapp.feature_note.presentation.notes.composables
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -11,7 +11,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.example.notyapp.feature_note.domain.util.OrderNote
 import com.example.notyapp.feature_note.domain.util.OrderType
-import com.example.notyapp.feature_note.presentation.DefaultRadioButton
+import com.example.notyapp.feature_note.presentation.notes.composables.DefaultRadioButton
 
 @Composable
 fun OrderSection(

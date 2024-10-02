@@ -2,6 +2,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.hilt)
 }
 
 android {
@@ -73,4 +75,13 @@ dependencies {
     implementation(libs.bundles.viewmodel)
     implementation(libs.coroutines)
     implementation(libs.navigation.compose)
+    ksp(libs.hilt.compiler)
+    ksp(libs.roomCompiler)
+
+    configurations {
+        all {
+            exclude(group = "com.intellij", module = "annotations")
+        }
+    }
+
 }

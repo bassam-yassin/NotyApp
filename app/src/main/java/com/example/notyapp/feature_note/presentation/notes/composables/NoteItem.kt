@@ -1,4 +1,4 @@
-package com.example.notyapp.feature_note.presentation.notes
+package com.example.notyapp.feature_note.presentation.notes.composables
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.Box
@@ -92,6 +92,7 @@ fun NoteItem(
             Icon(
                 imageVector = Icons.Default.Delete,
                 contentDescription = "Delete note",
+                tint = MaterialTheme.colorScheme.onSurface,
             )
 
         }

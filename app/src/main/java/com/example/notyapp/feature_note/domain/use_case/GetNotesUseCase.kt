@@ -6,7 +6,6 @@ import com.example.notyapp.feature_note.domain.util.OrderNote
 import com.example.notyapp.feature_note.domain.util.OrderType
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
-import org.openjdk.tools.javac.resources.CompilerProperties.Notes
 
 class GetNotesUseCase(
     private val repository: NoteRepository
